@@ -18,17 +18,22 @@ os.execute("chcp 65001")
 
 -- Criatura
 local monsterName = "BAPHOMET"
-local description = "Um demônio imponente com corpo humanoide coberto de pelos negros."
 local emoji = "🐐"
-local item = "Foice e Chifres Majestosos"
+local description = "Um demônio imponente com corpo humanoide coberto de pelos negros."
 local level = "81"
+local race = "Demônio"
+local property = "Sombrio 3"
+local size = "Grande"
+local item = "Foice e Chifres Majestosos"
+
 
 -- Atributos
-local attackAttribute = 10
-local defenseAttribute = 10
-local lifeAttribute = 10
-local speedAttribute = 5
-local intelligenceAttribute = 4
+local strAttribute = 7
+local agiAttribute = 7
+local vitAttribute = 2
+local intAttribute = 5
+local dexAttribute = 10
+local lukAttribute = 5
 
 -- função que recebe um atributo e nos retorna um barra de progresso em string
 local function getProgressBar(attribute)
@@ -51,18 +56,21 @@ end
 -- Cartão
 print("===================================================================")
 print("| ")
-print("| " .. monsterName)
+print("| " .. monsterName .. emoji)
 print("| " .. description)
 print("| ")
 print("| Nível: " .. level)
+print("| Nível: " .. race)
+print("| Nível: " .. property)
+print("| Nível: " .. size)
 print("| Itens: " .. item)
-print("| Emoji Favorito: " .. emoji)
 print("| ")
 print("| Atributos")
-print("|    Ataque:       " .. getProgressBar(attackAttribute))
-print("|    Defesa:       " .. getProgressBar(defenseAttribute))
-print("|    Vida:         " .. getProgressBar(lifeAttribute))
-print("|    Velocidade:   " .. getProgressBar(speedAttribute))
-print("|    Inteligência: " .. getProgressBar(intelligenceAttribute))
+print("|    Força:       " .. getProgressBar(strAttribute))
+print("|    Agilidade:   " .. getProgressBar(agiAttribute))
+print("|    Vitalidade:  " .. getProgressBar(vitAttribute))
+print("|    Inteligência:" .. getProgressBar(intAttribute))
+print("|    Destreza:    " .. getProgressBar(dexAttribute))
+print("|    Sorte:       " .. getProgressBar(lukAttribute))
 print("| ")
 print("===================================================================")
