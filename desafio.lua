@@ -24,7 +24,7 @@ local level = "81"
 local race = "Demônio"
 local property = "Sombrio 3"
 local size = "Grande"
-local item = "Foice e Chifres Majestosos"
+local item = "Chifres Majestosos e Foice"
 
 
 -- Atributos
